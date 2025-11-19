@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ko-kr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevTool · 코드 실행기</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <script src="/cdn/js/move_animation.js" defer></script>
+</head>
+<body>
+<button onclick="location.href = `/`"><- 메인 화면으로 돌아가기</button>
+<div id="aurora"></div>
+<div class="content_root">
+    
+</div>
+<script type="module">
+  import { createAurora } from "./bg.js";
+  createAurora({
+    container: "#aurora",
+    amplitude: 0.75,
+    blend: 1,
+    speed: 1.0,
+    colorStops: ["#ac39f9", "#b19eef", "#5227ff"]
+  });
+</script>
+</body>
+</html>
