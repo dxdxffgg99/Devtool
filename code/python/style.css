@@ -24,6 +24,7 @@ body > button:focus{transform: scale(0.975);}
   border-radius: 16px;
   top: 50%;
   transform: translateY(-50%);
+  padding: 16px;
 }
 
 .top_header{
@@ -45,3 +46,44 @@ body > button:focus{transform: scale(0.975);}
 .output_area{margin-top: 20px;height: 30%;}
 #runCodeBtn{padding: 5px 10px; background-color: #3498DB; color: white; border: none;position: absolute;right: 10px;border-radius: 5px;}
 .CodeMirror{font-size: 14px;}
+
+@media (max-width: 1080px) {
+  .content_root {
+    width: 90%;
+    min-height: 85%;
+  }
+}
+
+@media (max-width: 768px) {
+  .content_root {
+    width: 94%;
+    min-height: calc(100vh - 80px);
+    top: 0;
+    transform: none;
+    margin-top: 40px;
+    padding: 14px;
+  }
+  .top_header{
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+    height: auto;
+  }
+  #runCodeBtn{
+    position: static;
+    margin-top: 6px;
+  }
+  .code_input{height: 55%;}
+  .output_area{height: auto; min-height: 160px;}
+}
+
+@media (max-width: 540px) {
+  .content_root {
+    width: 96%;
+    margin-top: 30px;
+    padding: 12px;
+    border-radius: 12px;
+  }
+  #log{font-size: 11px;}
+  .CodeMirror{font-size: 13px;}
+}

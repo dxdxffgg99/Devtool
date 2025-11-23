@@ -154,7 +154,7 @@ document.addEventListener("DOMContentLoaded", () => {
                     console.error("URL 해시 디코딩 오류:", e);
                 }
             }
-            editor.setValue(`console.log("Hello, JS runner");`);
+            editor.setValue(`// JavaScript from Worker\nconsole.log("Hello, World!");`);
         }
         
         editor.on("change", () => {

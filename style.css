@@ -23,3 +23,23 @@ section{width: 100vw;height: 100vh;background-color: #000;}
 .section-1 img{position: absolute;z-index: 0;}
 .section-1 iframe{float: right;margin-right: 100px;width: 50%;height: 85%;position: relative;top: 50px;border: none;z-index: 2;}
 canvas{display:block;position: absolute;top: 100vh;z-index: 1;}
+
+@media (max-width: 960px) {
+  header {
+    height: 64px;
+  }
+  header h1 {
+    font-size: 20px;
+  }
+  header nav ul li {
+    margin-left: 12px;
+  }
+  main h2 {
+    font-size: 36px;
+    margin-left: 48px;
+  }
+  main h3 {
+    margin-left: 48px;
+    font-size: 20px;
+  }
+}

@@ -91,3 +91,48 @@ body > button:focus{transform: scale(0.975);}
 }
 
 .logo{width: 120px;height: 120px;float: right;}
+
+@media (max-width: 960px) {
+    body {
+        padding: 60px 18px;
+    }
+    .hero h1 {
+        font-size: 36px;
+    }
+    .hero .subtitle {
+        font-size: 16px;
+    }
+    .cards {
+        width: 100%;
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    }
+    .card {
+        padding: 16px;
+    }
+    .card .inner h2 {
+        font-size: 20px;
+    }
+    .warn {
+        font-size: 11px;
+        bottom: 8px;
+    }
+}
+
+@media (max-width: 600px) {
+    body {
+        padding: 40px 14px;
+    }
+    .hero h1 {
+        font-size: 30px;
+    }
+    .hero .subtitle {
+        font-size: 15px;
+    }
+    .cards {
+        grid-template-columns: 1fr;
+        gap: 14px;
+    }
+    .card {
+        border-radius: 12px;
+    }
+}
