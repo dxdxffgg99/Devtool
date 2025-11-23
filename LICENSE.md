@@ -1,0 +1,38 @@
+# Devtool project Licence
+
+## 저작자 표시 (BY)
+이 소스코드를 사용할 때는 원저작자인 【TERABYTE】를
+주석, 푸터, 크레딧 등 사용자가 쉽게 확인할 수 있는 위치에 표기해야 합니다.
+
+## 비영리 (NC)
+이 소스코드는 비영리적 목적에 한해 사용할 수 있습니다.
+상업적 이용, 유료 서비스, 재판매 등 영리 활동은 허용되지 않습니다.
+
+## 동일조건변경허락 (SA)
+이 소스코드를 수정하거나 이를 기반으로 한 파생물을 배포하는 경우,
+동일한 조건의 라이선스를 그대로 적용해야 합니다.
+(즉, 수정된 부분도 비영리 + BY + SA 조건을 따릅니다.)
+
+## 부분 소스 공개 (Partial Disclosure)
+이 소스코드를 사용한 부분만 공개하면 됩니다.
+프로젝트 전체 소스 공개는 필수 사항이 아닙니다.
+
+## 동의 (Agreement)
+본 소스코드를 사용하는 즉시 위 모든 조건에 동의한 것으로 간주합니다.
+
+<svg xmlns="http://www.w3.org/2000/svg" width="150" height="28" role="img" aria-label="Credit: TERABYTE">
+  <linearGradient id="grad" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0%" stop-color="#4A00E0"/>
+    <stop offset="100%" stop-color="#8E2DE2"/>
+  </linearGradient>
+
+  <rect width="150" height="28" rx="4" fill="url(#grad)"/>
+  <text x="75" y="18"
+        text-anchor="middle"
+        font-family="Segoe UI, Ubuntu, sans-serif"
+        font-size="13"
+        fill="white"
+        font-weight="600">
+    【TERABYTE】
+  </text>
+</svg>
