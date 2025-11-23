@@ -207,7 +207,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 }
             } else {
                  $editorElement.setValue(
-                     '# Python 3.14 WASM\nprint("Hello, World")\n'
+                     '# Python 3.14 WASM\nprint("Hello, World")'
                  );
             }
         }
