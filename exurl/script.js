@@ -23,7 +23,7 @@
             const url = exurlInput.value.trim();
             if (!url) return;
 
-            let endpoint = "https://exurl-api.dxdxffg.com/api/exurl?url=" + encodeURIComponent(url);
+            let endpoint = "https://exurl.devtool.co.kr/api/exurl?url=" + encodeURIComponent(url);
             if (exurlFollow.checked) endpoint += "&follow=1";
             if (exurlHeadOnly.checked) endpoint += "&head=1";
 

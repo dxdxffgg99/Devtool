@@ -21,10 +21,11 @@ body {
 `;
 document.head.appendChild(style_moveani);
 
-document.documentElement.style.visibility = "hidden";
-
-document.addEventListener("DOMContentLoaded", () => {
+function runEnterAnimation() {
     const bodyElement = document.body;
+    if (!bodyElement) return;
+
+    bodyElement.classList.remove("page-transition-exit");
     bodyElement.classList.add("page-transition-base");
 
     document.documentElement.style.visibility = "visible";
@@ -36,12 +37,28 @@ document.addEventListener("DOMContentLoaded", () => {
             bodyElement.classList.remove("page-transition-base", "page-transition-enter");
         }, 600);
     });
+}
+
+document.documentElement.style.visibility = "hidden";
+
+if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", runEnterAnimation);
+} else {
+    runEnterAnimation();
+}
+
+window.addEventListener("pageshow", (event) => {
+    if (event.persisted) {
+        runEnterAnimation();
+    }
 });
 
 document.addEventListener("click", e => {
     const anchorElement = e.target.closest("a");
-    
     if (!anchorElement) return;
+
+    if (e.metaKey || e.ctrlKey || e.shiftKey || e.altKey) return;
+
     const href = anchorElement.getAttribute("href");
     if (!href || href.startsWith("#") || href.startsWith("javascript:") || anchorElement.target === "_blank") return;
 
