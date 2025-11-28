@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://devtool.co.kr/sitemap.xml
+Host: devtool.co.kr
